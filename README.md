@@ -1,4 +1,5 @@
 <img width="78" height="20" alt="image" src="https://github.com/user-attachments/assets/9f6e89b6-7c52-4bc0-99b5-72f8e92eaa30" />
+
 # ScholarTrack · 学术论文投稿状态管理
 
 > 面向科研人的论文投稿全流程管理工具。一次记录，全流程跟踪——从提交、送审、审回，到拒稿转投、返修、录用。
