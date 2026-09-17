@@ -32,15 +32,53 @@
 
 ## 界面预览
 
-> 截图目录：运行 `redact.ps1`（自动打码个人信息）后输出到 `github-screenshots/`。
+### 仪表盘 — 一屏总览
 
-```
-github-screenshots/01-dashboard.png       仪表盘
-github-screenshots/02-my-papers.png       我的论文
-github-screenshots/03-timeline.png        全流程时间线
-github-screenshots/10-journal-library.png 期刊库
-github-screenshots/09-add-submission.png  添加投稿弹窗
-```
+![仪表盘](github-screenshots/01-dashboard.png)
+
+统计卡片、最近更新投稿、待办日历、投稿状态分布，打开即见全局。
+
+### 我的论文 — 全流程时间线
+
+![我的论文](github-screenshots/02-my-papers.png)
+
+按论文归档，每篇可含多次投稿记录；右侧时间线合并展示从首次投稿到最终接收的完整轨迹。
+
+![全流程时间线](github-screenshots/03-timeline.png)
+
+每一个节点都标注日期与期刊：拒稿 → 转投 → 送审 → 审回 → 返修 → 接收，一目了然。
+
+![投稿历程](github-screenshots/04-submission-history.png)
+
+每次投稿的期刊、投稿时间、决定时间、结果以卡片形式并排展示。
+
+### 投稿与进展记录
+
+| 添加新进展 | 添加新投稿 |
+|---|---|
+| ![添加进展](github-screenshots/05-add-progress-review.png) | ![添加投稿](github-screenshots/09-add-submission.png) |
+
+支持送审、审回（大修/中修/小修/接收/拒稿/转投）、返修提交等阶段，可附审稿意见与截止日期。
+
+| 审回结果选择 | 阶段选择 |
+|---|---|
+| ![审回结果](github-screenshots/06-add-progress-decision.png) | ![阶段选择](github-screenshots/07-add-progress-stage.png) |
+
+### 期刊库 — 数据驱动选刊
+
+![期刊库](github-screenshots/10-journal-library.png)
+
+![期刊详情](github-screenshots/08-journal-detail.png)
+
+每本期刊记录影响因子、平均审稿周期、录用率，以及你自己投过这本刊的实际审稿时长。
+
+### 设置与提醒
+
+![设置](github-screenshots/11-settings.png)
+
+修回截止提醒、状态变更通知、每周投稿摘要；数据自动保存，JSON 一键导出/导入。
+
+---
 
 ## 快速开始
 
@@ -100,3 +138,16 @@ npm run dist          # 输出到 dist/，生成 portable 单文件 EXE
 ## English
 
 ScholarTrack is a submission-status tracker for academic researchers. Track the full journey of each manuscript — submissions, review rounds, decisions, resubmissions and revisions — with a journal library that syncs automatically and local-first data storage. Desktop app for Windows (Electron), single-file UI, trilingual (中文 / English / 日本語).
+
+### Key Features
+
+- **Paper-centric tracking** — one paper, multiple submissions. Transfer journals without losing your progress history.
+- **Full timeline** — merges all submissions into one chronological trail, from first submission to final acceptance.
+- **Journal library** — impact factor, average review time, acceptance rate, and your own actual review duration per journal.
+- **Smart reminders** — revision deadline warnings (7 / 3 days before), status change notifications, weekly digest.
+- **Trilingual UI** — Chinese / English / Japanese, switchable via `Alt+1/2/3` or `L`.
+- **Local-first** — atomic JSON writes with rolling backups, one-click export/import.
+
+### Quick Start
+
+Download the portable EXE from `dist/` and double-click to run. No installation required.
