@@ -1,4 +1,6 @@
 <img width="78" height="20" alt="image" src="https://github.com/user-attachments/assets/9f6e89b6-7c52-4bc0-99b5-72f8e92eaa30" />
+<img width="148" height="20" alt="image" src="https://github.com/user-attachments/assets/7cbb1ea3-c9a3-4b1e-b309-40ea48311f5b" />
+<img width="130" height="20" alt="image" src="https://github.com/user-attachments/assets/2cf8971e-cd44-4706-9761-7b2de163deb4" />
 
 # ScholarTrack · 学术论文投稿状态管理
 
