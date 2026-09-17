@@ -1,0 +1,40 @@
+{
+  "name": "scholartrack",
+  "productName": "ScholarTrack",
+  "version": "1.0.0",
+  "description": "学术论文投稿状态管理软件",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "author": "ScholarTrack",
+  "license": "MIT",
+  "build": {
+    "appId": "com.scholartrack.app",
+    "productName": "ScholarTrack",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "build/icon.ico"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "portable"
+      ],
+      "artifactName": "ScholarTrack-${version}-portable.${ext}"
+    },
+    "portable": {
+      "artifactName": "ScholarTrack-${version}-portable.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^24.13.3"
+  }
+}

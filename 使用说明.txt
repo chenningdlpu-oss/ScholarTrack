@@ -1,0 +1,24 @@
+# ScholarTrack 投稿管理（Windows 桌面版）
+
+## 使用方式
+- **主程序**：双击 `dist\ScholarTrack-1.0.0-portable.exe` 即可运行，免安装。
+- 绿色目录版（可选）：`dist\win-unpacked\ScholarTrack.exe`，解压即用，无需等待单文件自解压。
+
+## 数据存储（稳定持久）
+- 数据文件：`C:\Users\Administrator\AppData\Roaming\ScholarTrack\data.json`
+- 每次修改后**自动原子写入**（先写临时文件再改名，避免写一半损坏），并在写新版本前自动滚动备份到 `data.backup.json`。
+- 主文件损坏时启动会自动回退到备份文件，数据不丢失。
+- 设置页「关于」可看到数据存储位置；「数据管理」支持随时导出 / 导入 JSON 备份。
+
+## 说明
+- 应用内语言：中文 / English / 日本語 三语切换（Alt+1/2/3 或 L 循环）。
+- 数据全部保存在本地，不上传任何服务器。
+- 重新打包：修改 `index.html` 后，在 `E:\状态软件` 目录执行：
+  `npm run dist`（需 Node.js 环境；已配置国内镜像加速）。
+
+## 文件结构
+- `index.html` 主界面（单文件应用）
+- `main.js` 主进程：窗口 + 文件存储（原子写入 + 自动备份）
+- `preload.js` 安全桥接（页面 ⇄ 文件存储）
+- `build\icon.ico` 应用图标
+- `dist\ScholarTrack-1.0.0-portable.exe` 免安装单文件程序
